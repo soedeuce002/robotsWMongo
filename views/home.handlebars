@@ -2,10 +2,22 @@
 <html>
   <head>
     <meta charset="utf-8">
+      <link rel='stylesheet' href='css/style.css'>
     <title>Robots W/ Mongo</title>
+
   </head>
   <body>
-
-
+      <h1>Robots User Directory</h1>
+      <a href="/unemployed">Robots
+    <div>
+      {{#robots}}
+        <ul>
+          <li><img src={{avatar}}></img></li>
+          <a href="/{{name}}">{{name}}</a>
+          <li id="job" class="work">{{job}}</li>
+          <li class="work">{{company}}</li>
+        </ul>
+      {{/robots}}
+    </div>
   </body>
 </html>

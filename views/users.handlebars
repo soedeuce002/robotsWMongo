@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title>Robots Looking for Work</title>
+  </head>
+  <body>
+    <div class="wrapper">
+        {{#robots}}
+            <img src="{{avatar}}" id="avatar">
+            <h1 id="name2">{{name}}</h1>
+            <h4>{{address.city}}, {{address.country}} | {{job}} {{company}}</h4>
+            <h4>{{email}} | {{phone}}</h4>
+            <h4><strong>Education</strong>:  {{university}}</h4>
+          {{/robots}}
+
+        </div>
+        <a href="/" id="back">Home</a>
+
+  </body>
+</html>
